@@ -1,50 +1,84 @@
 \documentclass[12pt]{article}
 
 \usepackage{array}
-\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[top=0.5in, bottom=0.5in, left=0.75in, right=0.75in]{geometry}
 
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{tabu}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing{\section}{0em}{0em}{1em}
+\titlespacing{\tabu}{0em}{0em}{-10em}
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\huge\bfseries Yue Niu}\\
+\begin{tabu}{c ? c}
+\vspace{0.25em}
+yuen@andrew.cmu.edu & github.com/kaonn 
+\end{tabu}
+\end{center}
+}
+
+\setlength\parindent{0pt}
+\newcolumntype{?}{!{\vrule width 0.5pt}}
 
 \begin{document}
+\pagenumbering{gobble}
+\maketitle
 
 \section{Education}
 
-\begin{tabular}{>{\bfseries}c | c | c}
+\begin{tabu} to \textwidth {@{} l ? c ? r }
 Carnegie Mellon University & B.S. in Computer Science, Minor in Physics & Class of 2017
-\end{tabular}
+\end{tabu}
 
 \begin{itemize}
+\itemsep-2pt
 \item GPA: 3.76
 \item Honors: Dean's List for School of Computer Science (Fall 2014, Fall 2017)
 \item Courses: Compiler Design, Programming Languages, Algorithms Design, Machine Learning, Computer Systems, Data Structures, Computer Graphics, Theoretical CS, Formal Logic
 \end{itemize}
 
 \section{Research \& Work}
-\begin{tabular}{>{\bfseries}c | c | r | r}
-Research Assistant & Prof. Jan Hoffmann, Department of Pure and Applied Logic & May - Aug 2017 & Pittsburgh, PA
-\end{tabular}
+\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r }
+Research Assistant & \emph{Prof. Jan Hoffmann, Pure \& Applied Logic} & May 2017 - & Pitt., PA
+\end{tabu}
+\vspace{-5pt}
 
 \begin{itemize}
+\itemsep-2pt
 \item Extended Resource Aware ML (RAML) with nested pattern matching by implementing Simon Peyton Jone's pattern compilation algorithm
 \item Designed natural heap space semantics for OCaml programs that tracks garbage collection
 \item Implemented heap semantics in OCaml with support for OCaml syntax
 \end{itemize}
 
-\begin{tabular}{>{\bfseries}c | c | r | r}
-Software development intern & Viavi Solutions & May - Aug 2016 & Colorado Springs, CO
-\end{tabular}
+\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r}
+Software Dev. Intern & \emph{Viavi Solutions} & May - Aug 2016 & Colorado Springs, CO
+\end{tabu}
+\vspace{-5pt}
 
 \begin{itemize}
+\itemsep-2pt
 \item Designed an accelerated data-plane packet receiver using Intel's Data Plane Dev. Kit (DPDK) 
 \item Engineered a modular architecture using C++11 around the C API
 \item Increased receiving throughput from 2-3Gbps to 10Gbps
 \item Ensured Inter-operability with the Linux kernel networking stack
 \end{itemize}
 
-\begin{tabular}{>{\bfseries}c | c | r | r}
-Software development intern & Testive & May - Aug 2015 & Boston, MA
-\end{tabular}
+\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r}
+Software Dev. Intern & \emph{Testive} & May - Aug 2015 & Boston, MA
+\end{tabu}
+\vspace{-5pt}
 
 \begin{itemize}
+\itemsep-2pt
 \item Collaborated with other interns to develop a cross platform mobile application
 \item Coordinated development of core functionality
 \item Employed the OpenCV (computer vision) API to parse image files into user input
@@ -54,32 +88,26 @@ Software development intern & Testive & May - Aug 2015 & Boston, MA
 
 \section{Projects}
 
-\begin{tabular}{>{\bfseries}c | c | r}
-C0 Compiler & Haskell & Aug - Dec 2016
-\end{tabular}
+\begin{tabu}{@{}>{\bfseries}c ? c  X[r]}
+C0 Compiler & \emph{Haskell} & Aug - Dec 2016
+\end{tabu}
+\vspace{-5pt}
 
 \begin{itemize}
+\itemsep-2pt
 \item Designed a complete compiler for a C-like language with safe-memory semantics
 \item Built unsafe-memory mode and standard -O0, -O1, and -O2 optimization levels
 \item Expanded support for LLVM textual IR as output format
-\item Streamlined pipeline to target multiple backend architectures (ARM, x86-64)
+\item Streamlined pipeline to target multiple backend architectures (ARM, x86-54)
 \end{itemize}
 
-\begin{tabular}{>{\bfseries}c | c | r}
-System F Interpretor & SML & Mar 2017
-\end{tabular}
+\begin{tabu}{@{}>{\bfseries}c ? c X[r]}
+Scalable Vector Graphics (SVG) Software Renderer & \emph{C++} & Oct 2016
+\end{tabu}
+\vspace{-5pt}
 
 \begin{itemize}
-\item Implemented type-checking and evaluation dynamics
-\item Built support for existential types
-\item Defined basic constructs such as products, sums, and streams
-\end{itemize}
-
-\begin{tabular}{>{\bfseries}c | c | r}
-Scalable Vector Graphics (SVG) Software Renderer & C++ & Oct 2016
-\end{tabular}
-
-\begin{itemize}
+\itemsep-2pt
 \item Built support for basic shapes: points, lines, triangles
 \item Implemented anti-aliasing via super-sampling
 \item Devised mipmap levels and linear interpolation for texture mapping
@@ -88,6 +116,7 @@ Scalable Vector Graphics (SVG) Software Renderer & C++ & Oct 2016
 \section{Interests \& Skills}
 
 \begin{itemize}
+\itemsep-2pt
 \item OCaml, Haskell, C, SML, Lean Theorem Prover, Python, C++, OpenCV, Django
 \item Programming Language, Type Theory, Formal Logic, Category Theory, Algebra
 \end{itemize}
