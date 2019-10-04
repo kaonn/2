@@ -1,17 +1,20 @@
 \documentclass[12pt]{article}
 
 \usepackage{array}
-\usepackage[top=0.5in, bottom=0.5in, left=0.75in, right=0.75in]{geometry}
+\usepackage[top=1in, bottom=0.5in, left=0.75in, right=0.75in]{geometry}
 
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{tabu}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
 
 \titleformat{\section}
 {\Large\bfseries}
 {}
 {0em}
-{}[\titlerule]
+{}
 
 \titlespacing{\section}{0em}{0em}{1em}
 \titlespacing{\tabu}{0em}{0em}{-10em}
@@ -19,10 +22,6 @@
 \renewcommand{\maketitle}{
 \begin{center}
 {\huge\bfseries Yue Niu}\\
-\begin{tabu}{c ? c}
-\vspace{0.25em}
-yuen@andrew.cmu.edu & github.com/kaonn 
-\end{tabu}
 \end{center}
 }
 
@@ -33,35 +32,85 @@ yuen@andrew.cmu.edu & github.com/kaonn
 \pagenumbering{gobble}
 \maketitle
 
-\section{Education}
-
-\begin{tabu} to \textwidth {@{} l ? c ? r }
-Carnegie Mellon University & B.S. in Computer Science, Minor in Physics & 2014 - 2017
-\end{tabu}
-
+\section{Contact}
 \begin{itemize}
 \itemsep-2pt
-\item GPA: 3.75
+\item Email: yuen@andrew.cmu.edu 
+\item Web: github.com/kaonn 
+\end{itemize}
+
+\section{Research Interests}
+
+Resource Analysis, Type Systems, Computational Complexity, Programming Language Semantics\\
+
+\section{Education}
+
+\begin{tabu} to \textwidth {@{}>{\bfseries} l  X[r] }
+Ph.D. in Computer Science & Aug 2018 - Present
+\end{tabu}
+
+\vspace{-5pt}
+\begin{itemize}
+\itemsep-5pt
+\item Carnegie Mellon University
+\item Advisor: Robert Harper
+\item Courses: 
+   Quantitative Program Analysis,
+   Parallel \& Concurrent Computation, 
+   Algebraic Topology,
+   Optimizing Compilers, 
+   Artificial Intelligence
+\end{itemize}
+
+\begin{tabu} to \textwidth {@{}>{\bfseries} l X[r] }
+B.S. in Computer Science, Minor in Physics & Aug 2014 - May 2017
+\end{tabu}
+
+\vspace{-5pt}
+\begin{itemize}
+\itemsep-2pt
+\item Carnegie Mellon University
+\item Research Advisor: Jan Hoffmann
+\item GPA: 3.76
 \item Honors: Dean's List for School of Computer Science (Fall 2014, Fall  2015, Spring 2017)
-\item Courses: Compiler Design, Programming Languages, Constructive Logic, Formal Logic, Computability, Algorithms Design, Machine Learning, Computer Systems, Computer Graphics
+\item Courses: 
+   Compiler Design,
+   Programming Languages, 
+   Constructive Logic, Formal Logic, 
+   Computability Theory, Algorithms Design,
+   Machine Learning, Computer Systems, Computer Graphics
 \end{itemize}
 
 \section{Research \& Work}
-\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r }
-Research Assistant & \emph{Prof. Jan Hoffmann, Comp. Sci. Department} & Feb 2017 - & Pitt., PA
+\begin{tabu}{@{}l   X[r] }
+  \textbf{Research Assistant} & Oct 2018 - Present\\
+\emph{Advised by Prof. Robert Harper, Comp. Sci. Dept} & Pitt., PA
+\end{tabu}
+\vspace{-5pt}
+
+\begin{itemize}
+\itemsep-2pt
+\item Developing computational type theory for complexity analysis
+\end{itemize}
+
+\begin{tabu}{@{}l X[r]  }
+  \bfseries{Research Assistant} &  Feb 2017 - Oct 2018\\
+\emph{Advised by Prof. Jan Hoffmann, Comp. Sci. Dept.} &Pitt., PA 
 \end{tabu}
 \vspace{-5pt}
 
 \begin{itemize}
 \itemsep-2pt
 \item Designed a big-step garbage-collected cost semantics for Resource Aware ML (RaML)
+\item Extended RaML type system to account for effects of garbage collection on heap usage
 \item Implemented cost semantics in OCaml with support for OCaml syntax
-\item Modified RaML type system to account for effects of garbage collection on heap usage
-\item Extended RaML with nested pattern matching (supports OCaml patterns such as data constructors, tuples, or patterns, aliases, etc)
+\item Enhanced RaML with nested pattern matching (supports OCaml patterns such as data constructors, tuples, or patterns, aliases, etc)
 \end{itemize}
 
-\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r }
-Teaching Assistant & \emph{Comp. Sci. Department} & Fall 2016 - & Pitt., PA
+\newpage
+\begin{tabu}{@{}l  X[r]}
+  \bfseries{Teaching Assistant} & Fall 2016\\
+\emph{Comp. Sci. Department} & Pitt., PA
 \end{tabu}
 \vspace{-5pt}
 
@@ -73,8 +122,9 @@ Teaching Assistant & \emph{Comp. Sci. Department} & Fall 2016 - & Pitt., PA
 \end{itemize}
 
 
-\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r}
-Software Dev. Intern & \emph{Viavi Solutions} & May - Aug 2016 & Colorado Springs, CO
+\begin{tabu}{@{}l X[r]}
+  \textbf{Software Dev. Intern} & May - Aug 2016 \\
+\emph{Viavi Solutions} & Colorado Springs, CO
 \end{tabu}
 \vspace{-5pt}
 
@@ -86,8 +136,9 @@ Software Dev. Intern & \emph{Viavi Solutions} & May - Aug 2016 & Colorado Spring
 \item Ensured Inter-operability with the Linux kernel networking stack
 \end{itemize}
 
-\begin{tabu}{@{}>{\bfseries}c ? c  X[r] ? r}
-Software Dev. Intern & \emph{Testive} & May - Aug 2015 & Boston, MA
+\begin{tabu}{@{}l X[r]}
+  \textbf{Software Dev. Intern} & May - Aug 2016 \\
+\emph{Testive} &Boston, MA
 \end{tabu}
 \vspace{-5pt}
 
@@ -100,6 +151,7 @@ Software Dev. Intern & \emph{Testive} & May - Aug 2015 & Boston, MA
 \end{itemize}
 
 
+\iffalse
 \section{Projects}
 
 \begin{tabu}{@{}>{\bfseries}c ? c  X[r]}
@@ -115,6 +167,7 @@ C0 Compiler & \emph{Haskell} & Aug - Dec 2016
 \item Streamlined pipeline to target multiple backend architectures (ARM, x86-64)
 \end{itemize}
 
+\fi
 % \begin{tabu}{@{}>{\bfseries}c ? c X[r]}
 % Scalable Vector Graphics (SVG) Software Renderer & \emph{C++} & Oct 2016
 % \end{tabu}
@@ -127,11 +180,9 @@ C0 Compiler & \emph{Haskell} & Aug - Dec 2016
 % \item Devised mipmap levels and linear interpolation for texture mapping
 % \end{itemize}
 
-\section{Interests \& Skills}
+\section{Publications}
 
-\begin{itemize}
-\itemsep-2pt
-\item OCaml, Haskell, SML, C, Python, C++, OpenCV, Django
-\item Programming Languages, Type Theory, Proof Theory, Category Theory 
-\end{itemize}
+\bibliographystyle{unsrt}
+\nocite{*}\bibliography{resume}
+
 \end{document}
