@@ -1,0 +1,259 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{mlmodern}
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[natbib, style=authoryear, sorting=ydnt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{bib.bib}
+\setlength\bibitemsep{1em}
+\hypersetup{citecolor=linkcolour}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Yue Niu} \\[7.5pt]
+\href{https://github.com/kaonn}{\raisebox{-0.05\height}\faGithub\ kaonn} \ $|$ \ 
+% \href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
+% \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:yuen@andrew.cmu.edu}{\raisebox{-0.05\height}\faEnvelope \ yuen@andrew.cmu.edu} \ 
+% \href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+% \section{Summary}
+
+% My work is centered around ergonomic \emph{logical frameworks} for studying 
+% \textbf{cost} and \textbf{behavior} of functional programs from both the 
+% \emph{local} and \emph{global} perspective. 
+
+% The local perspective is the analysis of individual programs. 
+% There are many well-developed settings for studying the behavioral properties of \emph{functional} 
+% programs alone; however the combination of \emph{cost} and behavior has traditionally been 
+% difficult to study in a compositional and faithful manner. My work contributes a 
+% formal setting in which one may speak about cost-aware properties of programs while retaining 
+% desirable mathematical properties such as functional extensionality. 
+% My collaborators and I have implemented the resulting logical framework and 
+% formalized many common pen-and-paper patterns of cost analysis. 
+
+% The global perspective is study of the overall structure of programming languages. 
+% One direction is the generalization of classic denotational semantics 
+% to the cost-aware setting. A natural criterion is the cost-aware generalization of 
+% \emph{adequacy}: the (cost-aware) denotational and operational meaning 
+% of programs should coincide. Therefore, the notion of adequacy can be used to 
+% ``ground'' the theorems inside the logical framework to the actual behavior \emph{and cost} of programs. 
+% By viewing programs as \emph{internal} mathematical constructions inside logical frameworks, 
+% I have developed this idea for an \emph{Algol}-like language as a basis for validating cost models. 
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2018 - present & Ph.D. in Computer Science at \textbf{Carnegie Mellon University} \hfill \normalsize \\
+
+2014 - 2018 & B.S. in Computer Science, Minor in Physics at \textbf{Carnegie Mellon University} \hfill 
+\end{tabularx}
+
+%Experience
+\section{Academic positions}
+
+\begin{tabularx}{\linewidth}{ @{}l X@{} }
+  Fall 2018 - present & \textbf{Doctoral student}, advised by Prof. Robert Harper \\[3.75pt]
+  Topic: & \emph{Logical frameworks for cost analysis}\\
+  Publications: &\citet{niu-harper:2020,niu-harper:2022,niu-sterling-grodin-harper:2022,grodin2023decalf}\\ \\ 
+  Mar 2019 - Jan 2021 & \textbf{Research assistant}, advised by Prof. Jan Hoffmann \\[3.75pt]
+  Topic: & \emph{Static analysis for functional programs with garbage collection}\\ 
+  Publications: & \citet{niu-hoffmann:2018}
+\end{tabularx}
+
+\section{Fellowships}
+
+\begin{tabularx}{\linewidth}{ @{}l X@{} }
+  Sep 2020 - Sep 2023 & 2020 National Defense Science and Engineering Graduate (NDSEG) Fellowship Award
+\end{tabularx}
+
+\section{Work experience}
+\begin{tabularx}{\linewidth}{ @{}l X@{} }
+  May - Aug 2016 & \textbf{Software dev. intern}, \emph{Viavi Solutions} \\[3.75pt]
+  Project: & \emph{Accelerated data-plane packet receiver} \\ \\ 
+  May - Aug 2015 & \textbf{Software dev. intern}, \emph{Testive} \\[3.75pt]
+  Project: & \emph{Parsing pictures of Scantron sheets} 
+%   \multicolumn{2}{@{}X@{}}{
+%   \begin{minipage}[t]{\linewidth}
+%       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+% \item[--] Designed an accelerated data-plane packet receiver using Intel's Data Plane Dev. Kit (DPDK) 
+% \item[--] Engineered a modular architecture using C++11 around the C API
+% \item[--] Increased receiving throughput from 2-3Gbps to 10Gbps
+% \item[--] Ensured Inter-operability with the Linux kernel networking stack
+%       \end{itemize}
+%   \end{minipage}
+%   }
+\end{tabularx}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%   \textbf{Software Dev. Intern} &\hfill May - Aug 2016 \\[3.75pt]
+% \emph{Testive} &Boston, MA\\
+%   \multicolumn{2}{@{}X@{}}{
+%   \begin{minipage}[t]{\linewidth}
+%       \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+% \item[--] Collaborated with other interns to develop a cross platform mobile application
+% \item[--] Coordinated development of core functionality
+% \item[--] Employed the OpenCV (computer vision) API to parse image files into user input
+% \item[--] Integrated backend logic into existing Django code base
+%       \end{itemize}
+%   \end{minipage}
+%   }
+% \end{tabularx}
+
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{calf: a \textbf{c}alf-\textbf{a}ware \textbf{l}ogical \textbf{f}ramework} & \hfill \href{https://github.com/jonsterling/agda-calf}{\textbf{calf} in Agda} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{}
+\end{tabularx}
+
+\section{Teaching assistant} 
+
+\begin{tabularx}{\linewidth}{ @{}l l@{} }
+  Fall 2022, \emph{with Prof. Jan Hoffmann} & Types and Programming languages\\
+  Fall 2020, \emph{with Prof. Robert Harper} & Foundations of Programming languages\\ 
+  Summer 2017, \emph{with Prof. Dilsun Kaynar} & Functional Programming
+\end{tabularx}
+
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{refsection}[bib.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+% \section{Skills}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}
+% Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
+% Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+% \end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
