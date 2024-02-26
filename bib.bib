@@ -1,4 +1,4 @@
-@INPROCEEDINGS{10175777,
+@INPROCEEDINGS{niu-harper:2023,
   author={Niu, Yue and Harper, Robert},
   booktitle={2023 38th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)}, 
   title={A Metalanguage for Cost-Aware Denotational Semantics}, 
@@ -24,14 +24,23 @@
   volume = {6},
 }
 
-@misc{grodin-niu-sterling-harper-2023,
-  title={Decalf: A Directed, Effectful Cost-Aware Logical Framework}, 
-  author={Harrison Grodin and Yue Niu and Jonathan Sterling and Robert Harper},
-  year={2023},
-  eprint={2307.05938},
-  archivePrefix={arXiv},
-  primaryClass={cs.PL},
-  note = {To appear, POPL 2024: 51st ACM SIGPLAN Symposium on Principles of Programming Languages}
+@article{grodin-niu-sterling-harper-2023,
+author = {Grodin, Harrison and Niu, Yue and Sterling, Jonathan and Harper, Robert},
+title = {Decalf: A Directed, Effectful Cost-Aware Logical Framework},
+year = {2024},
+issue_date = {January 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {POPL},
+url = {https://doi.org/10.1145/3632852},
+doi = {10.1145/3632852},
+abstract = {We present decalf, a directed, effectful cost-aware logical framework for studying quantitative aspects of functional programs with effects. Like calf, the language is based on a formal phase distinction between the extension and the intension of a program, its pure behavior as distinct from its cost measured by an effectful step-counting primitive. The type theory ensures that the behavior is unaffected by the cost accounting. Unlike calf, the present language takes account of effects, such as probabilistic choice and mutable state. This extension requires a reformulation of calf’s approach to cost accounting: rather than rely on a ”separable” notion of cost, here a cost bound is simply another program. To make this formal, we equip every type with an intrinsic preorder, relaxing the precise cost accounting intrinsic to a program to a looser but nevertheless informative estimate. For example, the cost bound of a probabilistic program is itself a probabilistic program that specifies the distribution of costs. This approach serves as a streamlined alternative to the standard method of isolating a cost recurrence and readily extends to higher-order, effectful programs. The development proceeds by first introducing the decalf type system, which is based on an intrinsic ordering among terms that restricts in the extensional phase to extensional equality, but in the intensional phase reflects an approximation of the cost of a program of interest. This formulation is then applied to a number of illustrative examples, including pure and effectful sorting algorithms, simple probabilistic programs, and higher-order functions. Finally, we justify decalf via a model in the topos of augmented simplicial sets.},
+journal = {Proc. ACM Program. Lang.},
+month = {jan},
+articleno = {10},
+numpages = {29},
+keywords = {algorithm analysis, amortized analysis, behavioral verification, cost models, equational reasoning, intensional property, mechanized proof, modal type theory, noninterference, parallel algorithms, phase distinction, proof assistants, recurrence relations}
 }
 
 @inproceedings{niu-hoffmann:2018,

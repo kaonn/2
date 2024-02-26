@@ -1,0 +1,524 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{grodin-niu-sterling-harper-2023}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=715bd53cd841de1fd3750c267bb73dd1}{%
+           family={Grodin},
+           familyi={G\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04b614a536506d432f9ad4bf46f70f5e}{%
+           family={Sterling},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{fullhash}{f98630f40d6d5fa6be9529c99547cf4f}
+      \strng{bibnamehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{authorbibnamehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{authornamehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{authorfullhash}{f98630f40d6d5fa6be9529c99547cf4f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present decalf, a directed, effectful cost-aware logical framework for studying quantitative aspects of functional programs with effects. Like calf, the language is based on a formal phase distinction between the extension and the intension of a program, its pure behavior as distinct from its cost measured by an effectful step-counting primitive. The type theory ensures that the behavior is unaffected by the cost accounting. Unlike calf, the present language takes account of effects, such as probabilistic choice and mutable state. This extension requires a reformulation of calf’s approach to cost accounting: rather than rely on a ”separable” notion of cost, here a cost bound is simply another program. To make this formal, we equip every type with an intrinsic preorder, relaxing the precise cost accounting intrinsic to a program to a looser but nevertheless informative estimate. For example, the cost bound of a probabilistic program is itself a probabilistic program that specifies the distribution of costs. This approach serves as a streamlined alternative to the standard method of isolating a cost recurrence and readily extends to higher-order, effectful programs. The development proceeds by first introducing the decalf type system, which is based on an intrinsic ordering among terms that restricts in the extensional phase to extensional equality, but in the intensional phase reflects an approximation of the cost of a program of interest. This formulation is then applied to a number of illustrative examples, including pure and effectful sorting algorithms, simple probabilistic programs, and higher-order functions. Finally, we justify decalf via a model in the topos of augmented simplicial sets.}
+      \field{journaltitle}{Proc. ACM Program. Lang.}
+      \field{month}{1}
+      \field{number}{POPL}
+      \field{title}{Decalf: A Directed, Effectful Cost-Aware Logical Framework}
+      \field{volume}{8}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1145/3632852
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3632852
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3632852
+      \endverb
+      \keyw{algorithm analysis,amortized analysis,behavioral verification,cost models,equational reasoning,intensional property,mechanized proof,modal type theory,noninterference,parallel algorithms,phase distinction,proof assistants,recurrence relations}
+    \endentry
+    \entry{niu-harper:2023}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{fullhash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{bibnamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authorbibnamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authornamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authorfullhash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 38th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)}
+      \field{title}{A Metalanguage for Cost-Aware Denotational Semantics}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/LICS56636.2023.10175777
+      \endverb
+    \endentry
+    \entry{niu-sterling-grodin-harper:2022}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04b614a536506d432f9ad4bf46f70f5e}{%
+           family={Sterling},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=715bd53cd841de1fd3750c267bb73dd1}{%
+           family={Grodin},
+           familyi={G\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \strng{namehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{fullhash}{6ddb1e5d006dd3a9e1738bd3c580668b}
+      \strng{bibnamehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{authorbibnamehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{authornamehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{authorfullhash}{6ddb1e5d006dd3a9e1738bd3c580668b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.PL}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
+      \field{number}{POPL}
+      \field{title}{A Cost-Aware Logical Framework}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1145/3498670
+      \endverb
+      \verb{eprint}
+      \verb 2107.04663
+      \endverb
+    \endentry
+    \entry{niu-hoffmann:2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bb7505af6f56de3344e7ca74aa3fb3c}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=a591e71debdbd9a86231c933df50ef0b}{%
+           family={Barthe},
+           familyi={B\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=dd1c8983ac85362d3aa2a529a62b0620}{%
+           family={Sutcliffe},
+           familyi={S\bibinitperiod},
+           given={Geoff},
+           giveni={G\bibinitperiod}}}%
+        {{hash=31d11cb0aeb207b83da9c56abea3b6b0}{%
+           family={Veanes},
+           familyi={V\bibinitperiod},
+           given={Margus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EasyChair}%
+      }
+      \strng{namehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{fullhash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{bibnamehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{authorbibnamehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{authornamehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{authorfullhash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{editorbibnamehash}{2c1c6171cf582d44c2c31f4624ffc957}
+      \strng{editornamehash}{5c4c8c53d41c334f7879cf1d9a6f4bab}
+      \strng{editorfullhash}{5c4c8c53d41c334f7879cf1d9a6f4bab}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{LPAR-22. 22nd International Conference on Logic for Programming, Artificial Intelligence and Reasoning}
+      \field{issn}{2398-7340}
+      \field{series}{EPiC Series in Computing}
+      \field{title}{Automatic Space Bound Analysis for Functional Programs with Garbage Collection}
+      \field{volume}{57}
+      \field{year}{2018}
+      \field{pages}{543\bibrangedash 563}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.29007/xkwx
+      \endverb
+      \verb{urlraw}
+      \verb https://easychair.org/publications/paper/dcnD
+      \endverb
+      \verb{url}
+      \verb https://easychair.org/publications/paper/dcnD
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{1}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{grodin-niu-sterling-harper-2023}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=715bd53cd841de1fd3750c267bb73dd1}{%
+           family={Grodin},
+           familyi={G\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04b614a536506d432f9ad4bf46f70f5e}{%
+           family={Sterling},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{fullhash}{f98630f40d6d5fa6be9529c99547cf4f}
+      \strng{bibnamehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{authorbibnamehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{authornamehash}{192ee07600fbed593ae5d0d9cb21cca4}
+      \strng{authorfullhash}{f98630f40d6d5fa6be9529c99547cf4f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present decalf, a directed, effectful cost-aware logical framework for studying quantitative aspects of functional programs with effects. Like calf, the language is based on a formal phase distinction between the extension and the intension of a program, its pure behavior as distinct from its cost measured by an effectful step-counting primitive. The type theory ensures that the behavior is unaffected by the cost accounting. Unlike calf, the present language takes account of effects, such as probabilistic choice and mutable state. This extension requires a reformulation of calf’s approach to cost accounting: rather than rely on a ”separable” notion of cost, here a cost bound is simply another program. To make this formal, we equip every type with an intrinsic preorder, relaxing the precise cost accounting intrinsic to a program to a looser but nevertheless informative estimate. For example, the cost bound of a probabilistic program is itself a probabilistic program that specifies the distribution of costs. This approach serves as a streamlined alternative to the standard method of isolating a cost recurrence and readily extends to higher-order, effectful programs. The development proceeds by first introducing the decalf type system, which is based on an intrinsic ordering among terms that restricts in the extensional phase to extensional equality, but in the intensional phase reflects an approximation of the cost of a program of interest. This formulation is then applied to a number of illustrative examples, including pure and effectful sorting algorithms, simple probabilistic programs, and higher-order functions. Finally, we justify decalf via a model in the topos of augmented simplicial sets.}
+      \field{journaltitle}{Proc. ACM Program. Lang.}
+      \field{month}{1}
+      \field{number}{POPL}
+      \field{title}{Decalf: A Directed, Effectful Cost-Aware Logical Framework}
+      \field{volume}{8}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1145/3632852
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3632852
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3632852
+      \endverb
+      \keyw{algorithm analysis,amortized analysis,behavioral verification,cost models,equational reasoning,intensional property,mechanized proof,modal type theory,noninterference,parallel algorithms,phase distinction,proof assistants,recurrence relations}
+    \endentry
+    \entry{niu-harper:2023}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{fullhash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{bibnamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authorbibnamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authornamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authorfullhash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 38th Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)}
+      \field{title}{A Metalanguage for Cost-Aware Denotational Semantics}
+      \field{year}{2023}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/LICS56636.2023.10175777
+      \endverb
+    \endentry
+    \entry{niu-sterling-grodin-harper:2022}{article}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04b614a536506d432f9ad4bf46f70f5e}{%
+           family={Sterling},
+           familyi={S\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=715bd53cd841de1fd3750c267bb73dd1}{%
+           family={Grodin},
+           familyi={G\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \strng{namehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{fullhash}{6ddb1e5d006dd3a9e1738bd3c580668b}
+      \strng{bibnamehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{authorbibnamehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{authornamehash}{9c56cfc8b7aa6cfaf340e5f862fe0aa2}
+      \strng{authorfullhash}{6ddb1e5d006dd3a9e1738bd3c580668b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.PL}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
+      \field{number}{POPL}
+      \field{title}{A Cost-Aware Logical Framework}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1145/3498670
+      \endverb
+      \verb{eprint}
+      \verb 2107.04663
+      \endverb
+    \endentry
+    \entry{niu-hoffmann:2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bb7505af6f56de3344e7ca74aa3fb3c}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=a591e71debdbd9a86231c933df50ef0b}{%
+           family={Barthe},
+           familyi={B\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=dd1c8983ac85362d3aa2a529a62b0620}{%
+           family={Sutcliffe},
+           familyi={S\bibinitperiod},
+           given={Geoff},
+           giveni={G\bibinitperiod}}}%
+        {{hash=31d11cb0aeb207b83da9c56abea3b6b0}{%
+           family={Veanes},
+           familyi={V\bibinitperiod},
+           given={Margus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EasyChair}%
+      }
+      \strng{namehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{fullhash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{bibnamehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{authorbibnamehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{authornamehash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{authorfullhash}{396fd8c780fd0742e83d8f3baf7dfc38}
+      \strng{editorbibnamehash}{2c1c6171cf582d44c2c31f4624ffc957}
+      \strng{editornamehash}{5c4c8c53d41c334f7879cf1d9a6f4bab}
+      \strng{editorfullhash}{5c4c8c53d41c334f7879cf1d9a6f4bab}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{LPAR-22. 22nd International Conference on Logic for Programming, Artificial Intelligence and Reasoning}
+      \field{issn}{2398-7340}
+      \field{series}{EPiC Series in Computing}
+      \field{title}{Automatic Space Bound Analysis for Functional Programs with Garbage Collection}
+      \field{volume}{57}
+      \field{year}{2018}
+      \true{nocite}
+      \field{pages}{543\bibrangedash 563}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.29007/xkwx
+      \endverb
+      \verb{urlraw}
+      \verb https://easychair.org/publications/paper/dcnD
+      \endverb
+      \verb{url}
+      \verb https://easychair.org/publications/paper/dcnD
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{2}
+  \datalist[entry]{ydnt/global//global/global}
+    \entry{niu-harper:2020}{online}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=89d307f3be8e1b3bdb69c4f3e3a8c016}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73259fe928ce8add0f265e234f8de3a6}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{fullhash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{bibnamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authorbibnamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authornamehash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \strng{authorfullhash}{b89dc56e81d472610a785d1d85c2c5a2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.PL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Cost-Aware Type Theory}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2011.03660
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

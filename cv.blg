@@ -1,0 +1,38 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'cv.blg'
+[393] biber-MSWIN64:340> INFO - === 
+[589] Biber.pm:419> INFO - Reading 'cv.bcf'
+[924] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[924] Biber.pm:976> INFO - Using all citekeys in bib section 1
+[924] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[924] Biber.pm:976> INFO - Using all citekeys in bib section 2
+[925] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[977] Biber.pm:4419> INFO - Processing section 0
+[1019] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 0
+[1174] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1203] bibtex.pm:1519> INFO - Found BibTeX data source 'bib.bib'
+[1363] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1363] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1364] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[1364] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1391] Biber.pm:4419> INFO - Processing section 1
+[1392] Biber.pm:4610> INFO - Looking for bibtex file 'bib.bib' for section 1
+[1498] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1498] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1498] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[1498] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1505] Biber.pm:4419> INFO - Processing section 2
+[1506] Biber.pm:4610> INFO - Looking for bibtex file 'manu.bib' for section 2
+[1636] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1651] bibtex.pm:1519> INFO - Found BibTeX data source 'manu.bib'
+[1688] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1689] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1689] Biber.pm:4239> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[1689] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[1693] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[1714] bbl.pm:763> INFO - Output to cv.bbl
+[1715] Biber.pm:131> WARN - legacy month field 'jan' in entry 'grodin-niu-sterling-harper-2023' is not an integer - this will probably not sort properly.
+[1715] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\yue\AppData\Local\Temp\biber_tmp_u_QH\283e1cb250985c2debc501124f55eeff_10732.utf8, line 15, warning: undefined macro "acm"
+[1715] Biber.pm:131> WARN - BibTeX subsystem: C:\Users\yue\AppData\Local\Temp\biber_tmp_u_QH\283e1cb250985c2debc501124f55eeff_10732.utf8, line 21, warning: undefined macro "pacmpl"
+[1715] Biber.pm:131> WARN - legacy month field 'jan' in entry 'grodin-niu-sterling-harper-2023' is not an integer - this will probably not sort properly.
+[1715] Biber.pm:133> INFO - WARNINGS: 4
